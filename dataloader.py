@@ -43,3 +43,8 @@ def read_joint(path):
         data = fp.read()
         body_info = json.loads(data)
     return body_info
+
+
+def write_joint(path, body_info):
+    with open(path, 'w') as fp:
+        json.dump(body_info, fp, indent=2)
