@@ -1,3 +1,4 @@
+import pandas as pd
 # depth map size : [height, width]
 DEPTH_SIZE = [424, 512]
 
@@ -10,8 +11,17 @@ BODY_COUNT = 6
 # connecting joint id
 CONNECTING_JOINTS = [1, 0, 20, 2, 20, 4, 5, 6, 20, 8, 9, 10, 0, 12, 13, 14, 0, 16, 17, 18, 1, 7, 7, 11, 11]
 
+SLICED_CONNECTING_JOINTS = [
+    [15, 14, 13, 12, 0],        #오른쪽다리
+    [19, 18, 17, 16, 0],        #왼쪽다리
+    [0, 1, 20, 2, 3],           #몸통
+    [6, 5, 4, 20, 8, 9, 10],    #양팔
+    [23, 11, 10, 24],           #왼손
+    [21, 7, 6, 22]]             #오른손
+
 # colors to draw bodies
 BODY_COLORS = [(204, 0, 0), (0, 204, 0), (0, 0, 204), (0, 204, 204), (204, 0, 204), (204, 204, 0)]
+COLORS = ['r', 'g', 'b', 'c', 'm', 'y']
 LINE_COLORS = [tuple(int(num / 2) for num in item) for item in BODY_COLORS]
 
 # colors to draw joints
