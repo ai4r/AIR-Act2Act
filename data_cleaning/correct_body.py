@@ -5,15 +5,15 @@ import shutil
 import glob
 from dataloader import read_joint, write_joint
 
-mode = 'I'  # {'I', 'F', 'M'}
-startFrame = 74
-endFrame = 152
-referenceFrame = 0
-body = 'LA'
+mode = 'F'  # {'I', 'F', 'M'}
+startFrame = 0
+endFrame = 121
+referenceFrame = 122
+body = 'RAA'
 b = 0
-fileIndex = 4624
+fileIndex = 460
 
-path = 'F:/AIR-Act2Act-2/'
+path = 'C:/Users/user-1/Desktop/data/'
 files = glob.glob(path + '*/*.joint')
 file = files[fileIndex]
 

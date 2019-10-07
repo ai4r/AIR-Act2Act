@@ -2,11 +2,11 @@ from constants import *
 from PIL import Image
 import numpy as np
 import glob
-from dataloader import read_joint, write_joint, read_depth_map
+from dataloader import read_joint, write_joint
 
-path = 'F:/AIR-Act2Act-2/'
+path = 'C:/Users/user-1/Desktop/data/'
 files = glob.glob(path + '*/*.~joint')
-startIndex = 4421
+startIndex = 154
 nData = 1
 
 px = 255
@@ -17,6 +17,7 @@ fx = px / np.tan(hfov * 0.5)
 fy = py / np.tan(vfov * 0.5)
 
 
+# info: this is different from dataloader.read_depth_map in scale
 def read_depth_map(path, cur_frame):
     png_path = path + "frame_" + str(cur_frame).zfill(3) + ".png"
     with open(png_path, 'rb') as file:
@@ -24,9 +25,8 @@ def read_depth_map(path, cur_frame):
         if data.width != DEPTH_SIZE[1] or data.height != DEPTH_SIZE[0]:
             raise ValueError('The depth map size should be {} X {}.'.format(DEPTH_SIZE[0], DEPTH_SIZE[1]))
         frame_data = np.asarray(data)
-        fixed_data = [i / 8000 * 255 for i in frame_data]
-        frame = np.reshape(fixed_data, (DEPTH_SIZE[0], DEPTH_SIZE[1]))
-        frame = frame.astype(np.uint8)
+        frame = np.reshape(frame_data, (DEPTH_SIZE[0], DEPTH_SIZE[1]))
+        # frame = frame.astype(np.uint8)
     return frame
 
 

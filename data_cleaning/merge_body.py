@@ -11,7 +11,7 @@ correct_body = 0
 incorrect_body = 5
 remove_body_id = 1
 
-path = 'F:/AIR-Act2Act-2/'
+path = 'C:/Users/user-1/Desktop/data/'
 ref_files = glob.glob(path + '*/*.joint')
 ref_file = ref_files[fileIndex]
 

@@ -2,9 +2,9 @@ import glob
 from dataloader import read_joint, write_joint
 from constants import BODY_COUNT
 
-path = 'F:/AIR-Act2Act-2/'
+path = 'C:/Users/user-1/Desktop/data/'
 files = glob.glob(path + '*/*.joint')
-startIndex = 4421
+startIndex = 154
 nData = 1
 
 
