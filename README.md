@@ -1,4 +1,4 @@
-# AIR-Act2Act Viewer
+# AIR-Act2Act Dataset
 
 - This repository contains scripts to load and view AIR-Act2Act dataset.  
 - The AIR-Act2Act is a human-human interaction dataset for training robots nonverbal interaction behaviors. The entire dataset has 5,000 interaction samples of 10 interaction classes: ***bow***, ***handshake***, ***hit***, etc. 
