@@ -4,7 +4,6 @@
 - The AIR-Act2Act is a human-human interaction dataset for training robots nonverbal interaction behaviors. The entire dataset has 5,000 interaction samples of 10 interaction classes: ***bow***, ***handshake***, ***hit***, etc. 
 - Each contains depth maps, body indexes and 3D skeletal data captured with three Microsoft Kinect v.2 cameras. 
 - In addition, the 3D skeletal data of a human was converted to the NAO robot's joint angles.
-- Some sample data can be downloaded [here (136MB)](https://drive.google.com/open?id=1zPcIP3Ma81SxN3swvyhJAhezi8l_Xxo-) and [here (4.50GB) (to be uploaded)](). 
   
   
 ## How to use
