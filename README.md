@@ -22,30 +22,10 @@
 The scripts are tested on Windows 10 and Python 3.6.1.
 
 
-## Download (AIR-Act2Act-1)
+## Download
 
-- Depth Maps (214GB)
-  - [air_act2act_1_depth_p001_to_p005.zip (23.1GB) (to be uploaded)]()
-  - [air_act2act_1_depth_p006_to_p010.zip (23.3GB) (to be uploaded)]()
-  - [air_act2act_1_depth_p011_to_p015.zip (22.8GB) (to be uploaded)]()
-  - [air_act2act_1_depth_p016_to_p020.zip (23.1GB) (to be uploaded)]()
-  - [air_act2act_1_depth_p021_to_p025.zip (21.8GB) (to be uploaded)]()
-  - [air_act2act_1_depth_p026_to_p030.zip (21.6GB) (to be uploaded)]()
-  - [air_act2act_1_depth_p031_to_p035.zip (20.1GB) (to be uploaded)]()
-  - [air_act2act_1_depth_p036_to_p040.zip (20.6GB) (to be uploaded)]()
-  - [air_act2act_1_depth_p041_to_p045.zip (19.0GB) (to be uploaded)]()
-  - [air_act2act_1_depth_p046_to_p050.zip (18.9GB) (to be uploaded)]()
-
-- Body Indexes
-  - [air_act2act_1_body.zip (2.12GB) (to be uploaded)]()
-
-- 3D Skeletons (1.67GB)
-  - [air_act2act_1_org_skeletons.zip (1.17GB) (to be uploaded)]()
-  - [air_act2act_1_ref_skeletons.zip (517MB) (to be uploaded)]()
-
-- Robotic Data (19.5MB)
-  - [air_act2act_1_nao.zip (9.72MB) (to be uploaded)]()
-  - [air_act2act_1_pepper.zip (9.78MB) (to be uploaded)]()
+Please follow the link below, and join as a member to get to the download page:
+- [http://nanum.etri.re.kr:8080/etriPortal/login?language=en](http://nanum.etri.re.kr:8080/etriPortal/login?language=en)
 
 
 ## Acknowledgement
