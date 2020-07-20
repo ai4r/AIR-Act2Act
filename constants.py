@@ -1,4 +1,3 @@
-import pandas as pd
 # depth map size : [height, width]
 DEPTH_SIZE = [424, 512]
 

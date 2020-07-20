@@ -171,8 +171,10 @@ class AIRViewer:
         for data_name in os.listdir(folder_path):
             abspath = folder_path + "/" + data_name
             if all(c in data_name for c in ['C', 'P', 'A', 'S']):
-                self.tree.insert('', 'end', text=str(index)+':  '+data_name, values=str(abspath), open=False)
-                index += 1
+                if os.path.exists(os.path.join(abspath, data_name + "_depth")) and \
+                     os.path.exists(os.path.join(abspath, data_name + ".joint")):
+                    self.tree.insert('', 'end', text=str(index)+':  '+data_name, values=str(abspath), open=False)
+                    index += 1
         self.tree.heading('#0', text=f'Video List - "{self.count_directory(folder_path)}" folders', anchor='w')
 
     # function of count dir

@@ -1,6 +1,6 @@
 # AIR-Act2Act Dataset
 
-### Human-Human Interaction Dataset for Training Robots Nonverbal Interaction Behaviors
+### Human-Human Interaction Dataset for Training Robots Nonverbal Interaction Behaviors  
 
 
 ## Introduction
@@ -12,27 +12,47 @@ Our dataset has the following strengths:
 - It is the only interaction dataset of the elderly;
 - It provides robotic data to be learned;
 - It is one of the largest interaction datasets that provides 3D skeletal data;
-- It can be used to not only teach social skills to robots but also benchmark action recognition algorithms.
+- It can be used to not only teach social skills to robots but also benchmark action recognition algorithms.  
 
 
 ## Download
 Please follow the link below, and join as a member to get to the download page:
-- [http://nanum.etri.re.kr:8080/etriPortal/login?language=en](http://nanum.etri.re.kr:8080/etriPortal/login?language=en)
+- [http://nanum.etri.re.kr:8080/etriPortal/login?language=en](http://nanum.etri.re.kr:8080/etriPortal/login?language=en)  
+
+
+## Pre-process
+If you have downloaded only sample data, you can view the data without pre-processing.  
+But, if you have downloaded full dataset, you should run [preprocess.py](https://github.com/ai4r/AIR-Act2Act/blob/master/preprocess.py) to make folder structure as follows:
+
+(data name)/  
+   ├─ (data name).avi  
+   ├─ (data name)_depth/  
+   ├─ (data name)_body/  
+   ├─ (data name).joint  
+   ├─ (data name).~joint  
+   ├─ (data name).nao  
+   └─ (data name).pepper  
+
+The name of each data is in the format of CcccPpppAaaaSsss (e.g., C003P100A010S005),  
+in which ccc is the camera ID, ppp is the performer ID, aaa is the interaction scenario ID, and sss is the setup number.
+
+You need to modify the folder names in [preprocess.py](https://github.com/ai4r/AIR-Act2Act/blob/master/preprocess.py) where input files and output files are located.  
+Note that, depth map and refined 3d skeletal data must be present to view the data.  
 
 
 ## How to view data
 
-0. Run 'viewer.py'
+0. Run [viewer.py](https://github.com/ai4r/AIR-Act2Act/blob/master/viewer.py)
 1. Open data folder
 1. Select data
 1. Click 'play' button
 
-![viewer](https://user-images.githubusercontent.com/13827622/58681405-2a105000-83a7-11e9-9946-698b33d31967.png)
+![viewer](https://user-images.githubusercontent.com/13827622/58681405-2a105000-83a7-11e9-9946-698b33d31967.png)  
 
 
 ## Installation
 
-The scripts are tested on Windows 10 and Python 3.6.1.
+The scripts are tested on Windows 10 and Python 3.6.1.  
 
 
 ## Dataset Summary
@@ -44,12 +64,12 @@ The scripts are tested on Windows 10 and Python 3.6.1.
 |Number of subjects|100 elderly people, 2 young people|
 |Collection environment|1) apartment, 2) senior welfare center|
 |Data modalities|RGB video, depth map, body index, 3D skeleton, Robotic data|
-|Sensor|Kinect v2|
+|Sensor|Kinect v2|  
 
 
 ## Interaction Scenarios
 
-We asked participants to perform each scenario five times. Each interaction scenario is defined as a pair of coordinated behaviors: an initiating behavior performed by an elderly person (E), and a responsive behavior performed by a partner (R). The initiating behaviors consisted of eight greeting behaviors and an additional two behaviors of high-five and hit. The responsive behaviors were designed so that, when performed by service robots, they would be acceptable to people as natural and humble reactions. Since we did not instruct the participants to act in an exact pattern, there were large variations in intra-class action trajectories.
+We asked participants to perform each scenario five times. Each interaction scenario is defined as a pair of coordinated behaviors: an initiating behavior performed by an elderly person (E), and a responsive behavior performed by a partner (R). The initiating behaviors consisted of eight greeting behaviors and an additional two behaviors of high-five and hit. The responsive behaviors were designed so that, when performed by service robots, they would be acceptable to people as natural and humble reactions. Since we did not instruct the participants to act in an exact pattern, there were large variations in intra-class action trajectories.  
 
 ||Interaction Scenario|
 |:---: |:--- |
@@ -62,7 +82,7 @@ We asked participants to perform each scenario five times. Each interaction scen
 |7|E: lifts his arm for a high-five.<br>R: high-fives with the elderly person.|
 |8|E: threatens to hit the robot.<br>R: blocks the face with arms.|
 |9|E: beckons to go away.<br>R: turns back and leaves the service area.|
-|10|E: turns back and walks to the door. <br>R: bows to the elderly person.|
+|10|E: turns back and walks to the door. <br>R: bows to the elderly person.|  
 
 
 ## Collection Setup
@@ -88,18 +108,18 @@ Our interaction data were collected in an apartment and a senior welfare center 
 |Body index|512 X 424|PNG|2.12 GB|
 |3D skeleton|25 joints|JSON|2.26 GB|
 |Robotic data|10 joint angles|JSON|47.0 MB|
-|||**Total**|521.88 GB|
+|||**Total**|521.88 GB|  
 
 
 ## Publication
 
 All documents and papers that report on research that uses the AIR-Act2Act dataset should cite the following paper:
 
-- Woo-Ri Ko, Minsu Jang, Jaeyeon Lee and Jaehong Kim,“AIR-Act2Act: Human-human interaction dataset for teaching non-verbal social behaviors to robots," The International Journal of Robotics Research (IJRR), *submitted*.
+- Woo-Ri Ko, Minsu Jang, Jaeyeon Lee and Jaehong Kim,“AIR-Act2Act: Human-human interaction dataset for teaching non-verbal social behaviors to robots," The International Journal of Robotics Research (IJRR), *submitted*.  
 
 
 ## Contact
-Please email wrko@etri.re.kr if you have any questions or comments.
+Please email wrko@etri.re.kr if you have any questions or comments.  
 
 
 ## Acknowledgment
