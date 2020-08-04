@@ -53,6 +53,9 @@ Note that, depth map and refined 3d skeletal data must be present to view the da
 ## Installation
 
 The scripts are tested on Windows 10 and Python 3.6.1.  
+You need to install the following modules.
+
+$ pip install pillow opencv-python matplotlib simplejson
 
 
 ## Dataset Summary
