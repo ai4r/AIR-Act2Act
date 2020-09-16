@@ -95,11 +95,11 @@ Our interaction data were collected in an apartment and a senior welfare center 
 
 - The apartment environment
 
-<img src="http://drive.google.com/uc?export=view&id=1fpmmt8Spu6Wj4UZ83Y3h0Vk_5ZxPNqZw" width="400">
+<img src="https://user-images.githubusercontent.com/13827622/93292569-d6867780-f820-11ea-90da-80dc79ffffbb.png" width="400">
 
 - The senior welfare center environment
 
-<img src="http://drive.google.com/uc?export=view&id=1zw33eItZ9xfkwKcP6V6gQLWNmmpAGioT" width="400">
+<img src="https://user-images.githubusercontent.com/13827622/93292638-f3bb4600-f820-11ea-89d2-3d00410ba203.png" width="400">
 
 
 ## Collected Data
