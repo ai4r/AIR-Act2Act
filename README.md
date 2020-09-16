@@ -95,12 +95,11 @@ Our interaction data were collected in an apartment and a senior welfare center 
 
 - The apartment environment
 
-<img src="http://drive.google.com/uc?export=view&id=1zw33eItZ9xfkwKcP6V6gQLWNmmpAGioT" width="400">
+<img src="http://drive.google.com/uc?export=view&id=1fpmmt8Spu6Wj4UZ83Y3h0Vk_5ZxPNqZw" width="400">
 
 - The senior welfare center environment
 
-<img src="http://drive.google.com/uc?export=view&id=1fpmmt8Spu6Wj4UZ83Y3h0Vk_5ZxPNqZw" width="400">
-
+<img src="http://drive.google.com/uc?export=view&id=1zw33eItZ9xfkwKcP6V6gQLWNmmpAGioT" width="400">
 
 
 ## Collected Data
@@ -119,7 +118,16 @@ Our interaction data were collected in an apartment and a senior welfare center 
 
 All documents and papers that report on research that uses the AIR-Act2Act dataset should cite the following paper:
 
-- Woo-Ri Ko, Minsu Jang, Jaeyeon Lee and Jaehong Kim,“AIR-Act2Act: Human-human interaction dataset for teaching non-verbal social behaviors to robots," The International Journal of Robotics Research (IJRR), *submitted*.  
+- Woo-Ri Ko, Minsu Jang, Jaeyeon Lee and Jaehong Kim, "AIR-Act2Act: Human-human interaction dataset for teaching non-verbal social behaviors to robots," [*arXiv preprint arXiv:2009.02041*](https://arxiv.org/abs/2009.02041), 2020.
+
+   ```
+   @article{ko2020air,
+     title={{AIR-Act2Act: Human-human interaction dataset for teaching non-verbal social behaviors to robots}},
+     author={Ko, Woo-Ri and Jang, Minsu and Lee, Jaeyeon and Kim, Jaehong},
+     journal={arXiv preprint arXiv:2009.02041},
+     year={2020}
+   }
+   ```
 
 
 ## Contact
@@ -129,4 +137,4 @@ Please email wrko@etri.re.kr if you have any questions or comments.
 ## Acknowledgment
 The protocol and consent of data collection were approved by the Institutional Review Board (IRB) at Suwon Science College, our joint research institute.
 
-This work was supported by the ICT R&D program of MSIP/IITP [2017-0-00162, Development of Human-care Robot Technology for Aging Society].
+This work was supported by the Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government (MSIT) (No. 2017-0-00162, Development of Human-care Robot Technology for Aging Society)  
