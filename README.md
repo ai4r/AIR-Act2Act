@@ -118,14 +118,18 @@ Our interaction data were collected in an apartment and a senior welfare center 
 
 All documents and papers that report on research that uses the AIR-Act2Act dataset should cite the following paper:
 
-- Woo-Ri Ko, Minsu Jang, Jaeyeon Lee and Jaehong Kim, "AIR-Act2Act: Human-human interaction dataset for teaching non-verbal social behaviors to robots," [*arXiv preprint arXiv:2009.02041*](https://arxiv.org/abs/2009.02041), 2020.
+- Woo-Ri Ko, Minsu Jang, Jaeyeon Lee and Jaehong Kim, "AIR-Act2Act: Human–human interaction dataset for teaching non-verbal social behaviors to robots," The International Journal of Robotics Research, vol. 40, no. 4-5, pp. 691-697, 2021.
 
    ```
-   @article{ko2020air,
-     title={{AIR-Act2Act: Human-human interaction dataset for teaching non-verbal social behaviors to robots}},
+   @article{ko2021air,
+     title={AIR-Act2Act: Human--human interaction dataset for teaching non-verbal social behaviors to robots},
      author={Ko, Woo-Ri and Jang, Minsu and Lee, Jaeyeon and Kim, Jaehong},
-     journal={arXiv preprint arXiv:2009.02041},
-     year={2020}
+     journal={The International Journal of Robotics Research},
+     volume={40},
+     number={4-5},
+     pages={691--697},
+     year={2021},
+     publisher={SAGE Publications Sage UK: London, England}
    }
    ```
 
