@@ -17,7 +17,7 @@ Our dataset has the following strengths:
 
 ## Download
 Please follow the link below, and join as a member to get to the download page:
-- [http://nanum.etri.re.kr:8080/etriPortal/login?language=en](http://nanum.etri.re.kr:8080/etriPortal/login?language=en)  
+- [https://nanum.etri.re.kr/share/list?lang=En_us](https://nanum.etri.re.kr/share/list?lang=En_us)  
 
 
 ## Pre-process
