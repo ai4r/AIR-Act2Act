@@ -171,10 +171,8 @@ class AIRViewer:
         for data_name in os.listdir(folder_path):
             abspath = folder_path + "/" + data_name
             if all(c in data_name for c in ['C', 'P', 'A', 'S']):
-                if os.path.exists(os.path.join(abspath, data_name + "_depth")) and \
-                     os.path.exists(os.path.join(abspath, data_name + ".joint")):
-                    self.tree.insert('', 'end', text=str(index)+':  '+data_name, values=str(abspath), open=False)
-                    index += 1
+                self.tree.insert('', 'end', text=str(index)+':  '+data_name, values=str(abspath), open=False)
+                index += 1
         self.tree.heading('#0', text=f'Video List - "{self.count_directory(folder_path)}" folders', anchor='w')
 
     # function of count dir
@@ -230,21 +228,23 @@ class AIRViewer:
         depth = dataloader.read_depth_map(self.depth_path, cur_frame)
         self.frame_count = dataloader.count_files(self.depth_path)
         depth = cv2.cvtColor(depth, cv2.COLOR_GRAY2RGB)
-        # body index
-        body = dataloader.read_body(self.body_path, cur_frame)
-        if body is not None:
-            self.draw_bodies(depth, body_map=body)
+        # # body index
+        # body = dataloader.read_body(self.body_path, cur_frame)
+        # if body is not None:
+        #     self.draw_bodies(depth, body_map=body)
 
         # currently selected nootbook
         if self.notebook2.index(self.notebook2.select()) == 0:
             depth_ref = np.array(depth)
             if self.joint_ref is not None:
                 self.draw_joints(depth_ref, self.joint_ref[cur_frame])
+            depth_ref = np.fliplr(depth_ref)
             self.show_image(depth_ref, self.label_depth1)
         if self.notebook2.index(self.notebook2.select()) == 1:
             depth_org = np.array(depth)
             if self.joint_org is not None:
                 self.draw_joints(depth_org, self.joint_org[cur_frame])
+            depth_org = np.fliplr(depth_org)
             self.show_image(depth_org, self.label_depth2)
 
         self.ax.set_xlim3d(-1.5, 1.5)
@@ -268,7 +268,7 @@ class AIRViewer:
                 p = self.joint_slice[body_section][j]
                 joint1 = self.joint_ref[cur_frame][b]["joints"][p]
                 new_joint1 = np.array([joint1['x'], joint1['y'], joint1['z']])
-                x.append(new_joint1[0])
+                x.append(-new_joint1[0])
                 y.append(new_joint1[1])
                 z.append(new_joint1[2])
             self.ax.plot(x, y, z, color=self.COLORS[b], linewidth=1.0)

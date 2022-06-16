@@ -55,7 +55,7 @@ Note that, depth map and refined 3d skeletal data must be present to view the da
 The scripts are tested on Windows 10 and Anaconda Python 3.6.  
 You need to install the following modules.
 
-$ pip install pillow opencv-python simplejson
+$ pip install pillow opencv-python simplejson  
 $ conda install matplotlib
 
 
